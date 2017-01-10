@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+
+	"name": "swemarx-UserAgent",
+	"short_name": "swemarx-UserAgent",
+	"description": "Allows you to change the User-Agent header sent on requests.",
+	"version": "0.1",
+
+	"browser_action": {
+		"default_title": "Click me!",
+		"default_icon": "images/icon.png",
+		"default_popup": "html/popup.html"
+	},
+
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	},
+
+	"permissions": [
+		"activeTab",
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*/"
+	],
+
+	"options_page": "html/popup.html"
+}
